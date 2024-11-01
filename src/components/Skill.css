@@ -1,0 +1,23 @@
+.skills {
+    padding: 20px;
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+.skill-card {
+    margin: 10px;
+    width: 120px; 
+    text-align: center;
+}
+.skill-card img {
+    max-width: 100%; 
+    height: auto; 
+}
+.skill-card h3 {
+    margin-top: 10px;
+    font-size: 1rem; 
+}
