@@ -1,27 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import './Projects.css';
-import notekeeperImage from '../assets/notekeeper.png';
-import weatherImage from '../assets/weather2.png';
-import calendarImage from '../assets/calendar.png';
+import ImageCarousel from './ImageCarousel';
+import wanderWise1 from '../assets/wanderWise1.png';
+import wanderwise2 from '../assets/wanderwise2.png';
+import dining1 from '../assets/dining1.png';
+import dining2 from '../assets/dining2.png';
+import dining3 from '../assets/dining3.png';
+import planItnow1 from '../assets/planItnow1.png';
+import planItnow2 from '../assets/planItnow2.png';
+import planItnow3 from '../assets/planItnow3.png';
 const projects = [
     {
-        title: 'NoteKeeper',
-        description: 'The NoteKeeper app is a dynamic and user-friendly note-taking application built using ReactJS, HTML, CSS, and JavaScript. With an intuitive interface and smooth user interactions, NoteKeeper allows users to effortlessly create, view, and delete notes, making it an ideal tool for organizing thoughts, tasks, and ideas. This app features a clean, modern UI/UX, crafted with thoughtful design principles to ensure a seamless experience. Leveraging Material UI (MUI) components, NoteKeeper provides a polished aesthetic with consistent and responsive elements.',
-        image: notekeeperImage,
-        url: 'https://rajeev2004.github.io/noteKeeper/', 
+        title: 'WanderWise (Travel Agency)',
+        description: 'WanderWise is a comprehensive travel agency application that facilitates smooth trip management for both users and administrators. Users can explore and book packages, while administrators have additional control over managing package details and bookings.',
+        images: [wanderWise1,wanderwise2],
+        url: 'https://rajeev2004.github.io/WanderWise/', 
     },
     {
-        title: 'Weather App',
-        description: 'The Weather App is a sleek, user-friendly application designed to provide real-time weather updates for any location. Built using HTML, CSS, and JavaScript, the app utilizes the OpenWeather API to fetch current weather data, offering users an accurate and informative experience.',
-        image: weatherImage,
-        url: 'https://weather-noio.onrender.com/', 
+        title: 'ClickStayDine (Hotel & Restaurant booking website)',
+        description: 'ClickStayDine is a restaurant and hotel booking web application that allows users to explore listings, make reservations, and manage their bookings seamlessly. The platform also provides a vendor dashboard for businesses to list and manage their hotels and restaurants.',
+        images: [dining2,dining1,dining3],
+        url: 'https://rajeev2004.github.io/ClickStayDine-Restaurant-and-Hotel-Booking-Website/', 
     },
     {
-        title: 'Calendar',
-        description: 'The Calendar App is a feature-rich, interactive application built using ReactJS, HTML, CSS, and JavaScript, designed to help users efficiently manage their schedules. With an intuitive interface, the app allows users to seamlessly add, edit, and delete events, making it a valuable tool for personal organization and time management.',
-        image: calendarImage,
-        url: 'https://rajeev2004.github.io/Calendar/', 
+        title: 'PlanItNow (Event Management)',
+        description: 'PlanItNow is a robust event management platform that allows users to create, manage, and join events. Whether you are an organizer looking to create an event or a user interested in joining, PlanItNow provides an intuitive interface for all.',
+        images: [planItnow1,planItnow2,planItnow3],
+        url: 'https://rajeev2004.github.io/PlanItNow-Event-Management/', 
     },
 ];
 function Projects() {
@@ -64,7 +70,7 @@ function Projects() {
                         animate={isVisible?{opacity:1,scale:1}:{}}
                         transition={{duration:0.5,delay:0.7+index*0.1}}
                     >
-                        <img src={project.image} alt={project.title} />
+                        <ImageCarousel images={project.images} />
                         <h3>{project.title}</h3>
                         <p>{project.description}</p>
                         <a 
