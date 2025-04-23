@@ -1,30 +1,70 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
 }
 .about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: underline;
 }
 .about-content {
-    max-width: 600px;
-    margin-bottom: 20px;
+  max-width: 600px;
+  margin-bottom: 20px;
 }
 .about-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #555;
-    margin: 0 20px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 20px;
 }
 .about-image {
-    max-width: 850px; 
-    width: 100%;
-    height: auto; 
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 1rem;
+}
+.resume-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.resume-button:hover {
+  background-color: #0056b3;
+}
+.about-highlights {
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+ul li {
+  margin: 5px 5px;
+}
+ul {
+  list-style-position: inside;
+}
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 10px 10px;
+}
+a {
+  margin-bottom: 5px;
+}
+h4:hover {
+  text-decoration: underline;
 }
