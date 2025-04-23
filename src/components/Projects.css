@@ -6,6 +6,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+    margin: 5px 5px;
 }
 .project-card {
     margin: 1rem;
@@ -14,15 +16,18 @@
     border-radius: 8px;
     max-width: 300px; 
     text-align: left; 
-}
-.project-card img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 8px 8px 0 0; 
+    transition: all 0.3s ease-in-out;
 }
 .project-card h3 {
     margin: 0.5rem 0; 
 }
 .project-card p {
     color: #555; 
+}
+h2{
+    text-decoration: underline;
+}
+.project-card:hover{
+    background-color: #f0f0f0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
