@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import aboutImage from "../assets/myself.jpg";
-import resumePDF from "../assets/RESUME.pdf";
+import resumePDF from "../assets/RajeevChoudhary_DSCE.pdf";
 import "./About.css";
 function About() {
   return (
