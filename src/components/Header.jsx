@@ -25,8 +25,10 @@ function Header(){
                 </div>
                 <nav className={`links${menu?"open":""}`}>
                     <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
                     <a href="#skills">Skill Section</a>
                     <a href="#projects">Projects</a>
+                    <a href="#achievements">Achievements</a>
                     <a href="#contacts">Contacts</a>
                 </nav>
                 <button className="menu-change" onClick={toggleMenu}>Menu</button>

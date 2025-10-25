@@ -50,7 +50,7 @@ function About() {
           transition={{ duration: 0.5, delay: 0.7 }}
         >
           <h4>Tech Stack I Work With:</h4>
-          <p>🛠️ HTML, CSS, JavaScript, ReactJS, Node.js, PostgreSQL</p>
+          <p>🛠️ HTML, CSS, JavaScript, ReactJS, Node.js, PostgreSQL, Git, Github, Sentry, Java</p>
         </motion.div>
         <motion.blockquote
           className="dev-quote"

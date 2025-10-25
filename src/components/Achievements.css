@@ -1,0 +1,18 @@
+.achievements {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  margin: 40px auto;
+  padding: 40px 20px;
+  max-width: 700px;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  color: var(--text-color);
+  margin: 12px 0;
+  font-size: 1rem;
+}
